@@ -1,0 +1,306 @@
+
+.fixed-top-2{
+	margin-top: 90px;
+}
+
+.navbar-text{
+	font-size: 18px;
+}
+
+#navbarColor{
+	background-color: white;
+}
+
+.dropdown-toggle{
+	background-color: white;
+	margin-top: 10px;
+}
+
+.displayRight{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+
+.jumbotron{
+	background: url("https://images.unsplash.com/photo-1449247666642-264389f5f5b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+	background-size: 100%;
+}
+
+#jumbotext{
+	padding-left: 400px;
+	color: white;
+	font-weight: 2000;
+}
+#jumbotext2{
+	color: white;
+	font-weight: 2000;
+}
+
+
+#picture1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#jumbo1{
+	background: rgb(246 247 249);
+}
+
+.cards{
+	margin-top: 10px;
+	text-align: center;
+	color: black;
+	height: 200px;
+	background: rgb(136 75 198);
+}
+
+#jumbo2{
+	height: 150px;
+	background: rgb(136 75 198);
+  	display: flex;
+  	align-items: center;
+}
+
+#jumbo3{
+	height: 300px;
+	margin-bottom: 0px;
+	margin-top: 150px;
+}
+
+
+.buttonRight{
+	background-color: rgb(136 75 198);
+	color: white;
+	font-weight: 500;
+	font-size: 12px;
+	width: 180px;
+
+}
+
+
+.whiteButton{
+	background-color: white;
+	color: rgb(136 75 198);
+	border: 3px solid rgb(136 75 198);
+	font-weight: 500;
+	font-size: 12px;
+	width: 180px;
+}
+
+#popular{
+	margin-top: 50px;
+}
+
+.card-title{
+	font-size: 30px;
+}
+
+#register{
+	margin-bottom: 50px;
+}
+
+
+.signup{
+	background-color: rgb(156 57 214);
+	color: white;
+}
+
+#trending{
+	margin-bottom: 50px;
+}
+
+#navLogin{
+	text-align: right;
+    border-color: 0px solid white;
+    background-color: white;
+}
+
+#navColor{
+	background-color: white;
+}
+
+#thisNav{
+	background-color: rgb(240 242 244);
+}
+
+#search{
+	margin-right: 300px;
+}
+
+.fa-circle{
+	color: rgb(216 216 216);
+	text-shadow: 2px 2px 4px #000000;
+
+}
+
+.form-rounded{
+	border-radius: 50px;
+}
+
+.navbar3{
+	color: black;
+}
+#show_bg_2 {
+ 
+background-image:
+linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+url("https://img.buzzfeed.com/buzzfeed-static/static/2017-04/17/12/asset/buzzfeed-prod-fastlane-01/sub-buzz-25818-1492445130-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto&output-quality=auto&output-format=auto&downsize=360:*");
+ 
+width: 80%;
+height: 400px;
+background-size: cover;
+}
+
+#show_bg_3 {
+ 
+background-image:
+linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN7rA8qdsZ1xow5jhiKtxI9Pb4lw3ZWxE11WLJ-H0ohacUVV2S1A");
+ 
+width: 80%;
+height: 400px;
+background-size: cover;
+}
+
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > li > a:hover {
+text-decoration: none;
+font-weight: bold;
+border-radius:0px;
+border-bottom-width: 4px;
+border-bottom-style: solid;
+border-bottom-color: #9c39d6;
+    color: #000 !important;
+    background-color: transparent !important;
+}
+.nav-pills > li > a{
+    border-radius:0px;
+    color:#000;
+}
+
+.buttonLogin {
+	border: 0px solid white;
+    background-color: white;
+}
+
+.colorfont {
+	color: black;
+	border: 0px solid black;
+	 background-color: white;
+}
+
+.login-top {
+	padding-top: 120px;
+}
+
+#jumbo4{
+	margin-top: 200px;
+}
+
+.card-img-top{
+	height: 200px;
+	width: 200px;
+}
+
+.col-lg-4{
+	margin-bottom: 20px;
+}
+
+/*.card {
+	justify-content: center;
+	margin-bottom: 20px;
+	height: 400px;
+}*/
+
+.navColor1{
+	text-decoration: none;
+	border-radius:0px;
+	color:  black;
+}
+
+.sale{
+	color: rgb(136 75 198);
+}
+
+.fa-heart, .fa-shopping-cart{
+	color: rgb(136 75 198);
+}
+
+.loadmore{
+	margin-left: 300px;
+}
+
+.fa-history{
+	color: blue;
+}
+
+.fa-tags{
+	color: orange;
+}
+
+.borderstyle{
+border-top: 2px solid gray; border-bottom: 2px solid gray;
+}
+
+.paddingtop{
+	padding-top: 200px;
+}
+
+.checkout {
+	font-size: 40px;
+}
+
+.malabo {
+	opacity: 0.5;
+}
+
+.fa-check-circle{
+	color: green;
+}
+
+.circleborder{
+  border: 8px solid #460073;
+  background-color: #460073;
+  color: white;
+  border-radius: 50%;
+  /*opacity: 0.5;*/
+}
+
+.borderright{
+	border-right: 2px solid red;
+	border-right-color: gray;
+}
+
+.adjust{
+margin-right: 200px;
+}
+
+.adjust2{
+	margin-right: 150px;
+}
+
+.borderbottom{
+	border-bottom: 2px solid gray;
+
+}
+/*.marginaccordion{
+	margin-top: 200px;
+
+	
+}*/
+
+.form-row{
+	margin-left: 40px;
+}
+
+.borderall{
+	border: 5px solid black;
+}
+
+.detailsmargin {
+margin-bottom: 100px;
+
+}

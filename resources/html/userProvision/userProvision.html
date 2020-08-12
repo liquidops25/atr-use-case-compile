@@ -1,0 +1,123 @@
+<div class="uc4_container">	
+	<div class="uc4-space-left">
+	</div>
+	<div class="uc4-main-container">
+		<div class="container-fluid">		
+			<div>
+				<label class="uni-main-title">USER PROVISION</label>
+			</div>		
+			<div class="uni-container custom-card-header">
+				<div class="title-container">
+					<label class="uni-title uni-shadow">PERSONAL</label>
+				</div>
+				<div class="uni-remove-space title-container">
+					<label class="uni-title uni-shadow">INFORMATION</label>
+				</div>
+			</div>
+			<div class="custom-card">
+				<div class="uni-container2">
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black uc4-lbl-font-weight">
+									First Name: 
+								</label>
+							</div>
+							<div class="col-md-7 uc4-border-bottom">
+								<input type="text" class="form-control inp active" id="uc4_first_name">
+							</div>
+						</div>
+					</div>
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black uc4-lbl-font-weight">
+									Last Name: 
+								</label>
+							</div>
+							<div class="col-md-7 uc4-border-bottom">
+								<input type="text" class="form-control inp active" id="uc4_last_name">
+							</div>
+						</div>
+					</div>
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black uc4-lbl-font-weight">
+									Email: 
+								</label>
+							</div>
+							<div class="col-md-7 uc4-border-bottom">
+								<input type="email" class="form-control inp active" id="uc4_email">
+							</div>
+						</div>
+					</div>
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Enterprise ID: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" id="uc4_emp_id">
+							</div>
+						</div>
+					</div>
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Application Website/URL: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" id="uc4_url">
+							</div>
+						</div>
+					</div>
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Use Type: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<select id="uc4_use_type" class="custom-select custom-size">
+								  <option value="" disabled selected hidden>Please Select...</option>
+								  <option value="admin">Admin</option>
+                				  <option value="user">User</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row uc4-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Account Type: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<select id="uc4_acc_type" class="custom-select custom-size">
+								  <option value="" disabled selected hidden>Please Select...</option>
+								  <option value="onboard">On-Boarding</option>
+                				  <option value="offboard">Off-Boarding</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				<div class="btn-container">
+					<button id="button" onclick="addData()" class="btn uni-button uni-btn-solo">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="uc4-space-right">
+	</div>
+</div>
+
+<script src="resources/js/userProvision/userProvision.js"></script>

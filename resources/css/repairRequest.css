@@ -1,0 +1,18 @@
+.uc1-container{
+	width: 100%;
+}
+
+.uc1-main-container{
+	width: 80%;
+	float: right;
+	display: block;
+}
+
+.uc1-space-left{
+	width: 5%; 
+	display: block;
+}
+
+.uc1-row-margin{	
+	margin-bottom: 10px;
+}

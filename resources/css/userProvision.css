@@ -1,0 +1,46 @@
+
+.uc4-container{
+	width: 100%;
+}
+
+.uc4-main-container{
+	width: 80%;
+	float: right;
+	display: block;
+}
+
+.uc4-space-left{
+	width: 5%; 
+	display: block;
+}
+
+.uc4-row-margin{	
+	margin-bottom: 10px;
+}
+
+.uc4-border-bottom.active{
+	/*border-right: 0.1px solid #a100ff;	**/
+	border-left: 0.1px solid #a100ff;	
+	border-bottom: 0.1px solid #a100ff;	
+
+}
+
+/*.uc4-lbl-font-weight{
+	font-weight: 500;
+}*/
+
+.uc4-status{
+	font-size: 22px;
+	color: black;
+	text-shadow: 0.7px 0.7px  #a100ff;
+}
+
+.main-content2{
+	margin-left: 2%;
+}
+
+.content-inside2{
+	margin-top: 0;
+}
+
+

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accenture | Philippines | CoolBean Telecom Inc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		label,h1,h2,li{
+			font-family: "Graphik";
+		}
+		.container{
+			width: 50%;
+			margin-top: 10px;
+		}
+		/*.container label{
+			font-style: Graphik;
+		}*/
+
+		.btn_action{
+			vertical-align: middle;
+			margin-left: 2%;
+		}
+
+		.btn_action img{
+			width: 40%;
+			height: 40%;
+		}
+		#create_form,#continue_form{
+			border: 2px solid black;
+  			border-radius: 25px;
+		}
+		#continue_form{
+			padding-bottom: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="inner-header">
+			<img src="img/acn_logo.png">
+			<div class="logo-container">
+				<h1>accenture | Philippines | CBT Inc.</h1>
+			</div>
+
+			<ul class="navigation">
+				<a href="javascript:goToHome();"><li>Home</li></a>
+				<a href=""><li>About</li></a>
+				<a href=""><li>Contact</li></a>
+				<a href=""><li>Support Us</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="main-content3">
+		<div class="content-inside3">
+			<div class="container">
+				<div id="create_form">
+					<div class="row">
+						<h2 class="text-center">Personal Information</h2><br>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-sm-4">
+									<label >First Name:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_f_name">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Last Name:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_l_name">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Email:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="inp_email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Contact:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_contact">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Address:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_address">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Account No:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_account">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+								  <label for="comment">Remarks:</label>
+								  <textarea class="form-control" rows="3" id="inp_remarks"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="continue_form">
+					<div class="row">
+						<h2 class="text-center">Personal Information</h2><br>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Full Name:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="first_name"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Last Name:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="last_name"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Email:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="email"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Contact:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="contact"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Address:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="address"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Account No:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="account"></label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Remarks:</label>
+								</div>
+								<div class="col-sm-8">
+									<label id="remarks"></label>
+								</div>
+							</div>
+							<div class="row" style="padding-top: 3%">
+								<div class="col-md-12">
+									<label>_______________________________________________</label>
+									<div class="row">
+										<div class="col-md-2">
+											<label>Status:</label>
+										</div>
+										<div class="col-md-7">
+											<label id="status"></label>
+										</div>
+									</div>
+								</div>
+							</div>				
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 btn_action">
+						<img id="btn_back" src="img/back.png">
+						<img id="btn_submit" src="img/submit.png" style="display: none;">
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class="footer">
+		<div class="top-margin"></div>
+		<div class="inner-footer">
+			<img src="img/1.png"><span> | </span> 
+			<img src="img/2.png"><span> | </span> 
+			<img src="img/3.png"><span> | </span> 
+			<img src="img/4.png">
+			<!-- <img src="img/5.png"><span> | </span> 
+			<img src="img/6.png"> -->
+		</div>
+		<div class="footer-top">
+			(02) 8-123-4567 | 29th Floor CoolBean Bldg. Mandaluyong, Pasig City, Philippines
+		</div>
+		<div class="footer-bottom">
+			&copy; Accenture | All Rights Reserved 2020
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+		var action = sessionStorage.getItem("action");
+		var data = sessionStorage.getItem("data");
+			data = JSON.parse(data);
+		var shortDesc = sessionStorage.getItem("remarks"); 
+		var acc_no = sessionStorage.getItem("acc_no"); 
+		var status = sessionStorage.getItem("status"); 
+
+			function show_form() {
+				if (action=="true") {
+					document.getElementById("create_form").style.display = "block";
+					document.getElementById("continue_form").style.display = "none";
+					document.getElementById("btn_submit").style.display = "inline-block";
+				} else {
+					document.getElementById("create_form").style.display = "none";
+					document.getElementById("continue_form").style.display = "block";
+					populate(data,shortDesc,acc_no,status);
+				}
+			}
+
+			function goToHome(){
+				var location = window.location.pathname;
+						location = location[location.lentgh -1] = "index.html";
+						window.location.href=location.toString();
+			}
+
+			function populate(data,shortDesc,acc_no,status){
+				console.log(data);
+				test = data;
+				$("#first_name").text(data["data"]["name"]["first"]);
+				$("#last_name").text(data["data"]["name"]["last"]);
+				$("#address").text(data["data"]["address"]);
+				$("#contact").text(data["data"]["phone"]);
+				$("#email").text(data["data"]["email"]);
+				$("#account").text(acc_no);
+				$("#remarks").text(shortDesc);
+				$("#status").text(status == "6" ? "Application is Approved" : status == "7" ? "Application is Disapproved" : status == "8" ? "Application is Canceled": "Application is Pending...");
+			}
+
+			function createTicket(shortDesc, description){
+				var ticketData = {"short_description": shortDesc,"description": description};
+				var username = "admin";
+				var password = "Liquidops01";
+				$.ajax({
+						    url: "https://dev101268.service-now.com/api/now/table/incident",
+						    headers: {
+						        "Authorization": "Basic " + btoa(username + ":" + password),
+				                'Accept':'application/json',
+				                'Content-Type':'application/json'},
+						    contentType: "application/json",
+						    dataType: "json",
+						    type: "POST", 
+						    data: JSON.stringify(ticketData),
+						    success: function(result){
+						       if(result.result){
+						       	var data = result.result;
+						       	sessionStorage.setItem("ticket_number", data.number);
+
+								var location = window.location.pathname;
+									location = location[location.lentgh -1] = "success_page.html";
+									window.location.href=location.toString();
+						       }
+						  }
+						});
+			}
+
+			$("#btn_back").click(function(){
+				var location = window.location.pathname;
+						location = location[location.lentgh -1] = "apply_page.html";
+						window.location.href=location.toString();
+			});
+
+			$("#btn_submit").click(function(){
+				var fname = $("#inp_f_name").val();
+				var lname = $("#inp_l_name").val();
+				var email = $("#inp_email").val();
+				var contact = $("#inp_contact").val();
+				var address = $("#inp_address").val();
+				var acc_no = $("#inp_account").val();
+				var remarks = $("#inp_remarks").val();
+				var description = "first-name:" + fname + ", last-name:" + lname + ", email:" + email + ", contact:" + contact;
+					description = description + ", address:" + address + ", account:" + acc_no + ", remarks:" + remarks;
+					console.log(description);
+				var shortDesc = "Request for Upgrade ~" + acc_no;
+
+					createTicket(shortDesc,description);
+					
+			});
+
+			
+		$( document ).ready(function() {
+			show_form();
+		});
+</script>
+</html>

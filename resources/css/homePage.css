@@ -1,0 +1,163 @@
+.homepage-container{
+    width: 75%;
+    height: 90%;
+    margin-left: 10%;
+}
+
+.homepage-container.active{
+     margin-left: 15%;
+}
+
+
+.options {
+   
+    text-shadow: 1px 1px black;
+    width: 30%;
+    float: left;
+    height: 250px;
+    margin: 1.66%;
+    padding: 50px;
+    box-shadow: 1px 1px black;
+}
+
+.btn_lbl{
+    font-size: 32px;
+  text-align: center;
+}
+
+.parent-option{
+    display: none;
+}
+
+.parent-option.active{
+    display: block;
+}
+
+.sub-options{
+    display: none;
+    visibility: hidden;
+}
+
+.sub-options.active{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+    display: block;
+}
+
+#repairRequest{
+    background: url("../img/repair_request_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
+
+#closeOrder{
+    background: url("../img/close_order_icon_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#priceUpdate{
+    background: url("../img/price_update_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#userProvision{
+    background: url("../img/user_provision_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#telecomOR{
+    background: url("../img/telecom_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#telecomUpgrade{
+    background: url("../img/upgrade_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#telecomMaintenance{
+    background: url("../img/Maintenance_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#uc6{
+    background: url("../img/lightbulb_purple2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.btn_lbl{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+
+#repairRequest:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#closeOrder:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#priceUpdate:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#userProvision:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#telecomOR:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#telecomUpgrade:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#telecomMaintenance:hover .btn_lbl{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+#uc6:hover .btn_lbl{
+     visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.5s linear;
+}
+
+
+#home-container {
+    width: 80%;
+    margin: 50px auto auto auto;
+}

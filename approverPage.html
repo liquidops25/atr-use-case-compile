@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accenture | ATR Use Cases</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<?php include 'cors.php';?>
+</head>
+<body>
+	<div class="main-container">
+		<div>
+			<div id="toggle-container" class="toggle-container">
+				<div class="bar">
+					<div onclick="goToggle()" class="nav-icon">
+						<div></div>
+					</div>
+				</div>	
+			</div>
+			<div id="left-side-bar" class="side-bar-content">
+				<div class="logo-brand">
+					<div class="logo-container">
+						<img src="resources/img/Acc_Logo_White_Purple_RGB.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="header" class="header">
+				<div class="label-container">
+					<label id="lbl_title" class="uni-font-black">CHECK REQUEST UPGRADE PAGE</label>
+				</div>
+				<div class="home-container">
+					<div id="btn_home">
+						<img src="resources/img/Acc_User_Interface_On_Icon_home_white.png">
+					</div>
+				</div>
+		</div>
+		<div id="main-content" class="main-content">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<div class="container-close">
+						<span class="dialog-close">&times;</span>
+					</div>
+					<p id="dialog-content" class="uni-font-black"></p>
+					<div class="container-close">
+						<button id="dialog-func" class="btn uni-button" style="margin-right: 25px; margin-bottom: 10px;">OK</button>
+					</div>
+				</div>
+			</div>
+			 <div class="content">
+			 	<div class="uc5_container">	
+					<div class="uc5-space-left">
+					</div>
+					<div class="uc5-main-container">
+						<div class="container-fluid">		
+							<div class="uni-container custom-card-header">
+								<div class="title-container">
+									<label class="uni-font-black" style="font-size: 20px;">ACCOUNT PERSONAL DETAILS</label>
+								</div>
+							</div>
+							<div class="custom-card">
+								<div class="uni-container2">
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Full Name: 
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="uni-font-black" id="uc5_full_name"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Email: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_email"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Contact: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_contact"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Address: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_address"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Account no: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_acc_no"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Location Status: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_location"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Payment Status: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_payment"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Balance: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_balance"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="container-fluid">		
+							<div class="uni-container custom-card-header">
+								<div class="title-container">
+									<label class="uni-font-black" style="font-size: 20px;">REQUESTOR DETAILS</label>
+								</div>
+							</div>
+							<div class="custom-card">
+								<div class="uni-container2">
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Full Name: 
+												</label>
+											</div>
+											<div class="col-md-3">
+												<label class="uni-font-black" id="uc5_req_full_name"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Email: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_req_email"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Contact: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_req_contact"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Address: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_req_address"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-3">
+												<label class="uni-font-black uc5-lbl-font-weight">
+													Account no: 
+												</label>
+											</div>
+											<div class="col-md-7">
+												<label class="uni-font-black" id="uc5_req_acc_no"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row uc5-row-margin">
+										<div class="col-md-12">
+											<div class="col-md-2">
+												<label class="uni-font-black uc5-lbl-font-weight">Remarks:</label>
+											</div>
+											<div class="col-md-8">
+												<div class="form-group">
+													<label class="uni-font-black" id="uc5_req_remarks"></label>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="status-container" class="row" style="margin-top: 30px; margin-bottom: 30px;">
+										<div class="col-md-12">
+											<div class="col-md-2">
+												<label class="uni-font-black uc5-lbl-font-weight">Status:</label>
+											</div>
+											<div class="col-md-8">
+												<label class="uni-font uc5-status" id="uc5_req_status"></label>
+											</div>
+										</div>
+									</div>
+									<div id="btn-container" class="btn-container" style="margin-top: 25px;">
+										<button onclick="approveRequest()" class="btn uni-button uni-btn-left">APPROVE REQUEST</button>
+										<button onclick="rejectRequest()" class="btn uni-button">REJECT REQUEST</button>
+									</div>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="uc5-space-right">
+					</div>
+				 </div>
+			</div>
+			<div class="acn_technology">
+		        <img src="resources/img/acn_technology.png">
+		    </div>
+			<footer id="footer">
+				<div class="footer-content  uni-font-white">
+					&copy; Accenture | All Rights Reserved 2020
+				</div>
+			</footer> 
+		</div>
+	</div>
+<script type="text/javascript">
+
+	var data;
+	var requestor_data;
+	var acc_no;
+	var loc_status;
+	var pay_status;
+	var decTicket;
+	var reqStatus;
+	var url_request = "https://dh-winnie.atrmywizard360.com/atr-gateway/automation-queue/public/api/v1/async-job/"
+
+
+	function getUserData(account) {
+
+		var settings = {
+			"url": "https://coolbean-telecom-inc-e2d8b.firebaseio.com/CBT_DB/"+account+".json",
+			"method": "GET",
+			"timeout": 0,
+		};
+
+		$.ajax(settings).done(function (response) {
+		 	user_data = response;
+		 	console.log(user_data);
+		     if(user_data && account!="" && account!=null){
+				var action = false;
+				var acc_no = account;
+				populate(user_data,null)
+			} 
+		});
+	}
+
+	function dialogBox(dia_content,dia_func){
+		document.getElementById("myModal").style.display = "block";
+		$("#dialog-content").text(dia_content);
+		$("#dialog-func").click(function(){
+			if(dia_func)
+				dia_func();
+
+			document.getElementById("myModal").style.display = "none";
+		});
+
+	}
+
+	function getParams (url) {
+		var params = {};
+		var parser = document.createElement('a');
+		parser.href = url;
+		var query = parser.search.substring(1);
+		var vars = query.split('&');
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split('=');
+			params[pair[0]] = decodeURIComponent(pair[1]);
+		}
+		return params;
+	}
+
+	function populate(data){
+		console.log(data);
+		test = data;
+		$("#uc5_full_name").text(data["data"]["name"]["first"] + " " + data["data"]["name"]["last"]);
+		$("#uc5_address").text(data["data"]["address"]);
+		$("#uc5_contact").text(data["data"]["phone"]);
+		$("#uc5_email").text(data["data"]["email"]);
+		$("#uc5_acc_no").text(acc_no);
+		$("#uc5_location").text(loc_status);
+		$("#uc5_payment").text(pay_status);
+		$("#uc5_balance").text(data["data"]["balance"]);
+	
+	}
+
+	function populateReq(dataReq){
+		$("#uc5_req_full_name").text(dataReq[0]);
+		$("#uc5_req_email").text(dataReq[1]);
+		$("#uc5_req_contact").text(dataReq[2]);
+		$("#uc5_req_address").text(dataReq[3]);;
+		$("#uc5_req_acc_no").text(dataReq[4]);
+		$("#uc5_req_remarks").text(dataReq[5]);
+		$("#uc5_req_status").text(reqStatus == "APPROVED" ? "Application is Approved" : reqStatus == "REJECTED" ? "Application is Disapproved." :  "Application is Pending...");
+
+	}
+
+	function approveRequest(){
+		decisionFunc("APPROVED");
+		url_request = url_request + data.job_id + "/DONE?authToken=" + data.token;
+		getUrl(url_request);
+	}
+
+	function rejectRequest(){
+		decisionFunc("REJECTED");
+		url_request = url_request + data.job_id + "/FAILED?authToken=" + data.token;
+		getUrl(url_request);
+	}
+
+	function getUrl(request_url){
+
+		$.ajax({
+			    url: request_url,
+			    type: "GET", 
+			    success: function(result){
+			       dialogBox(result,function(){
+			       		location.reload();
+			       });
+			  }
+			});
+	}
+
+	function retrieveDecFunc(){
+
+		var settings = {
+		  "url": "https://coolbean-telecom-inc-e2d8b.firebaseio.com/CBT_DB3/"+ decTicket +".json",
+		  "method": "GET",
+		  "timeout": 0,
+		  "headers": {
+		    "Content-Type": "text/plain"
+		  }
+		};
+
+		$.ajax(settings).done(function (response) {
+		   	 console.log(response);
+		   	for(key in response){
+				console.log(key);
+                console.log(response[key]);
+				reqStatus = response[key]["status"];
+				$("#uc5_req_status").text(reqStatus == "APPROVED" ? "Application is Approved" : reqStatus == "REJECTED" ? "Application is Disapproved." :  "Application is Pending...");
+
+				if(reqStatus == "APPROVED" || reqStatus == "REJECTED")
+					document.getElementById("btn-container").style.display = "none";
+			}
+		});
+	}
+
+	function decisionFunc(decAction){
+
+		var decData = { "status" : decAction};
+		var settings = {
+		  "url": "https://coolbean-telecom-inc-e2d8b.firebaseio.com/CBT_DB3/"+ decTicket +".json",
+		  "method": "POST",
+		  "timeout": 0,
+		  "headers": {
+		    "Content-Type": "text/plain"
+		  },
+		  "data": JSON.stringify(decData),
+		};
+
+		$.ajax(settings).done(function (response) {
+		  console.log(response);
+		});
+	}
+
+
+	$( document ).ready(function() {
+		data = getParams(window.location.href);
+		if(data){
+			requestor_data = data.desc.split("~");
+			if(requestor_data.length > 0){
+				acc_no = requestor_data[4];
+				loc_status = requestor_data[6];
+				pay_status = requestor_data[7];
+				decTicket = requestor_data[8];
+				retrieveDecFunc();
+				getUserData(acc_no);
+				populateReq(requestor_data);
+
+			}
+
+		}
+	});
+
+
+</script>
+
+</body>
+</html>

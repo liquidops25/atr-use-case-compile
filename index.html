@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>accenture | ATR Use Cases</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	 https://firebase.google.com/docs/web/setup#available-libraries -->
+	<script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<?php include 'cors.php';?>
+</head>
+<body>
+	<div class="main-container">
+		<div>
+			<div id="toggle-container" class="toggle-container">
+				<div class="bar">
+					<div onclick="goToggle()" class="nav-icon">
+						<div></div>
+					</div>
+				</div>	
+			</div>
+			<div id="left-side-bar" class="side-bar-content">
+				<div class="logo-brand">
+					<div class="logo-container">
+						<img src="resources/img/Acc_Logo_White_Purple_RGB.png">
+					</div>
+				</div>
+
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(1)">
+					<img class="icon img_below" src="resources/img/repair_request_black.png">
+					<img class="icon img_top" src="resources/img/repair_request_white.png"> 
+					Repair Request 
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(2)">
+					<img class="icon img_below" src="resources/img/close_order_icon_black.png">
+					<img class="icon img_top" src="resources/img/close_order_icon_white.png"> 
+					Close Order
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(3)">
+					<img class="icon img_below" src="resources/img/price_update_black.png">
+					<img class="icon img_top" src="resources/img/price_update_white.png"> 
+					Price Update
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(4)">
+					<img class="icon img_below" src="resources/img/user_provision_black.png">
+					<img class="icon img_top" src="resources/img/user_provision_white.png"> 
+					User Provision
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(5)">
+					<img class="icon img_below" src="resources/img/telecom_black.png">
+					<img class="icon img_top" src="resources/img/telecom_white.png"> 
+					Telecom Online Request
+						<div id="sub-category" class="sub-category">
+							<a class="use_case use_case-sub uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(6)">
+								<img class="icon icon-sub img_below" src="resources/img/upgrade.png">
+								<img class="icon icon-sub img_top" src="resources/img/upgrade_white.png">
+								Upgrade
+							</a>
+							<a class="use_case use_case-sub uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(7)">
+								<img class="icon icon-sub img_below" src="resources/img/Maintenance.png">
+								<img class="icon icon-sub img_top" src="resources/img/Maintenance_white.png">
+								Maintenance
+							</a>
+						</div>
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(7)">
+					<img class="icon img_below" src="resources/img/lightbulb_black.png">
+					<img class="icon img_top" src="resources/img/lightbulb_white.png"> 
+					Use Case Slot 1
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(8)">
+					<img class="icon img_below" src="resources/img/lightbulb_black.png">
+					<img class="icon img_top" src="resources/img/lightbulb_white.png"> 
+					Use Case Slot 2
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(9)">
+					<img class="icon img_below" src="resources/img/lightbulb_black.png">
+					<img class="icon img_top" src="resources/img/lightbulb_white.png"> 
+					Use Case Slot 3
+				</a>
+				<a class="use_case uni-font-black uni-bold uc_icon" href="javascript:goToUseCase(10)">
+					<img class="icon img_below" src="resources/img/lightbulb_black.png">
+					<img class="icon img_top" src="resources/img/lightbulb_white.png"> 
+					Use Case Slot 4
+				</a>
+			</div>
+		</div>
+		<div id="header" class="header">
+				<div class="label-container">
+					<label id="lbl_title" class="uni-font-black">ATR USE CASE MODULES</label>
+				</div>
+				<div class="home-container">
+					<div id="btn_home">
+						<img src="resources/img/Acc_User_Interface_On_Icon_home_white.png">
+					</div>
+				</div>
+		</div>
+		<div id="main-content" class="main-content">
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+				<div class="modal-content">
+					<div class="container-close">
+						<span class="dialog-close">&times;</span>
+					</div>
+					<p id="dialog-content" class="uni-font-black"></p>
+					<div class="container-close">
+						<button id="dialog-func" class="btn uni-button" style="margin-right: 25px; margin-bottom: 10px;">OK</button>
+					</div>
+				</div>
+			</div>
+			 <div class="content">
+			 </div>
+		</div>
+		<div class="acn_technology">
+	        <img src="resources/img/acn_technology.png">
+	    </div>
+		<footer id="footer">
+			<div class="footer-content  uni-font-white">
+				&copy; Accenture | All Rights Reserved 2020
+			</div>
+		</footer> 
+	</div>
+<script type="text/javascript">
+	var homepage = false;
+	$(function(){
+			$(".content").load("resources/html/homePage/homepage2.html");
+			homepage = true;
+		});
+
+	$("#btn_home").click(function(){
+		homepage = true;
+		$(".content").load("resources/html/homePage/homepage2.html");
+		$("#lbl_title").text("ATR USE CASE MODULES");
+		goHide();
+		var element2 = document.getElementsByClassName("active-bar")
+				if(element2)
+					$(element2).removeClass("active-bar");
+	});
+
+	function gotoApprovePage(){
+		var location = window.location.pathname;
+			location = location[location.lentgh -1] = "approverPage.html";
+			window.location.href=location.toString();
+	}
+
+
+	function goHide() { 
+			var element = document.getElementById("homepage-container");
+				if(element)
+					element.classList.remove("active");
+			var element = document.getElementById("toggle-container");
+				element.classList.remove("change");
+			var element2 = document.getElementById("left-side-bar");
+				element2.classList.remove("active"); 
+			var element3 = document.getElementById("footer");
+				element3.classList.remove("active");
+			var element4 = document.getElementById("header");
+				element4.classList.remove("active");
+			var element5 = document.getElementById("main-content");
+				element5.classList.remove("active");		
+		} 
+
+	function goToggle() { 
+			if(!homepage){
+				var element = document.getElementById("uc3-container");
+				if(element)
+					element.classList.toggle("active");
+				var element = document.getElementById("homepage-container");
+				if(element)
+					element.classList.toggle("active");
+				var element = document.getElementById("toggle-container");
+					element.classList.toggle("change");
+				var element = document.getElementById("left-side-bar");
+					element.classList.toggle("active"); 
+				var element = document.getElementById("footer");
+					element.classList.toggle("active");
+				var element = document.getElementById("header");
+					element.classList.toggle("active");
+				var element = document.getElementById("main-content");
+					element.classList.toggle("active");		
+			}
+		} 
+
+	function goToUseCase(index) {
+		var info = getFileName(index);
+		homepage = false;
+		if(index == 5){
+				showSubCat();
+		} else {
+			$(".content").load(info.fileName);
+			$("#lbl_title").text(info.labelName);
+		}	
+	
+		goActive(index-1)
+
+			
+		}
+
+	function showSubCat(){
+		var element = document.getElementById("sub-category")
+			element.classList.toggle("active"); 
+	}
+
+
+	function goActive(index) { 
+			
+			var element2 = document.getElementsByClassName("active-bar")
+				if(element2)
+					$(element2).removeClass("active-bar");
+			var element = document.getElementsByClassName("use_case")[parseInt(index)]
+			element.classList.toggle("active-bar"); 
+		}
+
+
+	function getFileName(index){
+			var fileName ="";
+			var labelName ="";
+			switch(index){
+				case 1: fileName = "resources/html/RepairRequest/repairRequest.html"; labelName = "REPAIR REQUEST"; break;
+				case 2: fileName = "testcheckout.html"; labelName = "CLOSE ORDER"; break;
+				case 3: fileName = "resources/html/priceUpdate/PriceUpdate.html"; labelName = "PRICE UPDATE"; break;
+				case 4: fileName = "resources/html/userProvision/userProvision.html"; labelName = "USER PROVISION"; break;
+				case 5: labelName = "TELECOM ONLINE REQUEST"; break;
+				case 6: fileName = "resources/html/telecomOnlineRequest/requestForUpgradeContinueandCreate.html"; labelName = "TELECOM ONLINE REQUEST"; break;
+				case 7: fileName = "resources/html/telecomOnlineRequest/requestForMaintenance.html"; labelName = "TELECOM ONLINE REQUEST"; break;
+				case 8: fileName = "home.html"; break;
+				case 9: fileName = "home.html"; break;
+				default: fileName = "resources/html/homePage/homepage.html";
+
+			}
+
+			var info = {"fileName": fileName, "labelName": labelName }
+	
+			return info;
+		}
+
+	function dialogBox(dia_content,dia_func){
+		document.getElementById("myModal").style.display = "block";
+		$("#dialog-content").text(dia_content);
+		$("#dialog-func").click(function(){
+			if(dia_func)
+				dia_func();
+
+			document.getElementById("myModal").style.display = "none";
+		});
+
+	}
+
+		$( document ).ready(function() {
+		    console.log( "ready!" );
+		    document.getElementById("sub-category").children[0].remove();
+		});
+</script>
+
+</body>
+</html>

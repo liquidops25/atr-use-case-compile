@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accenture | Philippines | CoolBean Telecom Inc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="inner-header">
+			<img src="img/acn_logo.png">
+			<div class="logo-container">
+				<h1>accenture | Philippines | CBT Inc.</h1>
+			</div>
+
+			<ul class="navigation">
+				<a href="javascript:goToHome();"><li>Home</li></a>
+				<a href=""><li>About</li></a>
+				<a href=""><li>Contact</li></a>
+				<a href=""><li>Support Us</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="main-content3">
+		<div class="content-inside3">
+			<div class="container">
+				<div id="maintenance_form" style="margin-top: 5%;">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-4"></div>
+							<div class="col-md-4" style="padding-bottom: 1%; margin: 0;">
+								<div class="col-md-12 text-center">
+									<h1 class="bg-dark text-white">CoolBean Bank Inc.</h1>
+									<label>________________________________________________</label>
+								</div>
+								<div class="col-md-12 text-center">
+									<label style="font-size: 130%" id="success_msg"></label>
+								</div>	
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+	    </div>
+	</div>
+	<div class="footer">
+		<div class="top-margin"></div>
+		<div class="inner-footer">
+			<img src="img/1.png"><span> | </span> 
+			<img src="img/2.png"><span> | </span> 
+			<img src="img/3.png"><span> | </span> 
+			<img src="img/4.png">
+			<!-- <img src="img/5.png"><span> | </span> 
+			<img src="img/6.png"> -->
+		</div>
+		<div class="footer-top">
+			(02) 8-123-4567 | 29th Floor CoolBean Bldg. Mandaluyong, Pasig City, Philippines
+		</div>
+		<div class="footer-bottom">
+			&copy; Accenture | All Rights Reserved 2020
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var ticket_number = sessionStorage.getItem("ticket_number");
+
+	function goToHome(){
+				var location = window.location.pathname;
+						location = location[location.lentgh -1] = "index.html";
+						window.location.href=location.toString();
+			}
+
+	$( document ).ready(function() {
+		var message = "Thank you for using CBT Inc. Online Application, Your reference no: " + ticket_number;
+			$("#success_msg").text(message);
+		});
+</script>
+</html>

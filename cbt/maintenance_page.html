@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accenture | Philippines | CoolBean Telecom Inc</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		label{
+			/*font-family: "Montserrat", "Open Sans";*/
+		}
+		.container{
+			width: 50%;
+			margin-top: 10px;
+		}
+		.btn_action{
+			vertical-align: middle;
+			margin-left: 2%;
+		}
+
+		.btn_action img{
+			width: 40%;
+			height: 40%;
+		}
+		#maintenance_form{
+			border: 2px solid black;
+  			border-radius: 25px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="inner-header">
+			<img src="img/acn_logo.png">
+			<div class="logo-container">
+				<h1>accenture | Philippines | CBT Inc.</h1>
+			</div>
+
+			<ul class="navigation">
+				<a href="javascript:goToHome();"><li>Home</li></a>
+				<a href=""><li>About</li></a>
+				<a href=""><li>Contact</li></a>
+				<a href=""><li>Support Us</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="main-content3">
+		<div class="content-inside3">
+			<div class="container">
+				<div id="maintenance_form">
+					<div class="row">
+						<h2 class="text-center">Personal Information</h2><br>
+						<div class="col-md-2"></div>
+						<div class="col-md-8">
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Full Name:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_fullname">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Email:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="email" class="form-control" id="inp_email">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Contact:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_contact">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Address:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_address">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-4">
+									<label >Account No:</label>
+								</div>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" id="inp_account">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group">
+								  <label for="comment">Remarks:</label>
+								  <textarea class="form-control" rows="3" id="inp_remarks"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 btn_action">
+						<img id="btn_back" src="img/back.png">
+						<img id="btn_submit" src="img/submit.png">
+					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class="footer">
+		<div class="top-margin"></div>
+		<div class="inner-footer">
+			<img src="img/1.png"><span> | </span> 
+			<img src="img/2.png"><span> | </span> 
+			<img src="img/3.png"><span> | </span> 
+			<img src="img/4.png">
+			<!-- <img src="img/5.png"><span> | </span> 
+			<img src="img/6.png"> -->
+		</div>
+		<div class="footer-top">
+			(02) 8-123-4567 | 29th Floor CoolBean Bldg. Mandaluyong, Pasig City, Philippines
+		</div>
+		<div class="footer-bottom">
+			&copy; Accenture | All Rights Reserved 2020
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+			function goToHome(){
+				var location = window.location.pathname;
+						location = location[location.lentgh -1] = "index.html";
+						window.location.href=location.toString();
+			}
+
+			function createTicket(shortDesc, description){
+				var ticketData = {"short_description": shortDesc,"description": description};
+				var username = "admin";
+				var password = "Liquidops01";
+				$.ajax({
+						    url: "https://dev101268.service-now.com/api/now/table/incident",
+						    headers: {
+						        "Authorization": "Basic " + btoa(username + ":" + password),
+				                'Accept':'application/json',
+				                'Content-Type':'application/json'},
+						    contentType: "application/json",
+						    dataType: "json",
+						    type: "POST", 
+						    data: JSON.stringify(ticketData),
+						    success: function(result){
+						       if(result.result){
+						       	console.log(result.result.number);
+						       	console.log(result);
+						       	sessionStorage.setItem("ticket_number", result.result.number);
+						       	var location = window.location.pathname;
+									location = location[location.lentgh -1] = "success_page.html";
+									window.location.href=location.toString();
+						       }
+						  }
+						});
+			}
+
+			$("#btn_back").click(function(){
+				var location = window.location.pathname;
+						location = location[location.lentgh -1] = "index.html";
+						window.location.href=location.toString();
+			});
+
+			$("#btn_submit").click(function(){
+				var fullname = $("#inp_fullname").val();
+				var email = $("#inp_email").val();
+				var contact = $("#inp_contact").val();
+				var address = $("#inp_address").val();
+				var acc_no = $("#inp_account").val();
+				var remarks = $("#inp_remarks").val();
+				var description = "fullname:" + fullname + ", email:" + email + ", contact:" + contact;
+					description = description + ", address:" + address + ", account:" + acc_no + ", remarks:" + remarks;
+				var shortDesc = "Request for Maintenance ~" + acc_no;
+
+					createTicket(shortDesc, description);
+
+			});
+
+		
+		$( document ).ready(function() {
+			
+		});
+</script>
+</html>

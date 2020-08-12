@@ -1,0 +1,56 @@
+
+.main-content2{
+	margin-left: 2%;
+}
+
+.content-inside2{
+	margin-top: 0;
+}
+
+
+#promo2{
+	margin-left: 3%;
+}
+
+#promo2 .col-sm-9{
+	width: 110%;
+	height: 110%;
+}
+
+#pic_upgrade{a
+	width: 100%;
+	height: 100%;
+}
+
+#btn_apply_now{
+	width: 35%;
+	height: 35%;
+	margin-left: 35%;
+	position: inherit;
+	transition: .6s;
+}
+
+#btn_apply_now.active{
+	margin-left: 55%;
+	transition: .6s;
+}
+
+
+#line_separator{
+	margin-left: 13%;
+}
+
+#frm_concerns{
+	margin-top: 30px;
+	margin-left: 50px;
+	text-align: left;
+}
+
+#frm_concerns label,a{
+	font-size: 20px;
+}
+
+#acn_logo{
+	width: 20%;
+	height:20%;
+}

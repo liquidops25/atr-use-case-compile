@@ -1,0 +1,151 @@
+<div class="uc1_container">	
+	<div class="uc1-space-left">
+	</div>
+	<div class="uc1-main-container">
+		<div class="container-fluid">	
+			<div>
+				<label class="uni-main-title">REPAIR REQUEST</label>
+			</div>			
+			<div class="uni-container custom-card-header">
+				<div class="title-container">
+					<label class="uni-title uni-shadow">REQUEST</label>
+				</div>
+				<div class="uni-remove-space title-container">
+					<label class="uni-title uni-shadow">INFORMATION</label>
+				</div>
+			</div>
+			<div class="custom-card">
+				<div class="uni-container2">
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Employee ID: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input placeholder="juan.dela.cruz" type="text" class="form-control" id="uc1_emp_id">
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Employee Name: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input placeholder="Juan Dela Cruz" type="text" class="form-control" id="uc1_emp_name">
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Employee Email: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input placeholder="test@gmail.com" type="email" class="form-control" id="uc1_emp_email">
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Supervisor: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" id="uc1_supervisor">
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Workspace Location: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" id="uc1_work_loc">
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Department: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<select id="uc1_department" class="custom-select custom-size">
+								  <option value="" disabled selected hidden>Please Select...</option>
+								   <option value="humanResources">Human Resources</option>
+				                    <option value="accountingAndFinance">Accounting and Finance</option>
+				                    <option value="marketing">Marketing</option>
+				                    <option value="engineering">Engineering</option>
+				                    <option value="informationTechnology">Information Technology</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Device: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<select id="uc1_device" class="custom-select custom-size">
+								  <option value="" disabled selected hidden>Please Select...</option>
+								  <option value="desktop">Desktop</option>
+								  <option value="laptop">Laptop</option>
+								  <option value="tablet">Tablet</option>
+								  <option value="phone">Phone</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-3">
+								<label class="uni-font-black">
+									Complaint summary: 
+								</label>
+							</div>
+							<div class="col-md-7">
+								<input type="text" class="form-control" id="uc1_summary">
+							</div>
+						</div>
+					</div>
+					<div class="row uc1-row-margin">
+						<div class="col-md-12">
+							<div class="col-md-2">
+								<label class="uni-font-black">Description:</label>
+							</div>
+							<div class="col-md-8">
+								<div class="form-group">
+									<textarea class="form-control" rows="5" id="uc1_description"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-container">
+					<button onclick="sumbitFunc()" class="btn uni-button uni-btn-solo">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="uc1-space-right">
+	</div>
+</div>
+
+<script src="resources/js/repairRequest/RepairRequest.js"></script>
